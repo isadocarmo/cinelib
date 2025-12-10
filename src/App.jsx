@@ -1,25 +1,29 @@
 import './App.css';
 
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+
 const App = () => {
   return (
     <>
-      aqui vai a barra de navegação...
-    
-    <main>
-      <div className="container">
+      <NavBar />
 
-        <h2 className="title">Filmes Populares:</h2>
+      <main>
+        <div className="container">
 
-        <div className="movies-container">
-          aqui vai os cards dos filmes...
+          <h2 className="title">Filmes Populares:</h2>
+
+          <div className="movies-container">
+            aqui vai os cards dos filmes...
+          </div>
+
         </div>
+      </main>
 
-      </div>
-    </main>
-
-    aqui vai o rodapé...
+      <Footer />
     </>
-    );
-  };
+  );
+};
 
 export default App;
+
